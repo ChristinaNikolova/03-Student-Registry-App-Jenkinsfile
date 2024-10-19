@@ -9,7 +9,7 @@ pipeline {
         stage('Set up Node.js') {
             steps {
                 bat 'npm -v'
-             }
+            }
          }
         stage('Install dependencies') {
             steps {
