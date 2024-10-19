@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Start the application') {
             steps {
-                bat 'npm run start'
+                bat 'start /B npm run start'
             }
         }
         stage('Run the tests') {
