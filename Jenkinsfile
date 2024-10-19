@@ -6,6 +6,14 @@ pipeline {
                 checkout scm
             }
         }
+        stage('Set up Node.js') {
+            steps {
+                script {
+                    bat 'nvm install 20.x'
+                    bat 'nvm use 20.x'
+                 }
+             }
+         }
         stage('Install dependencies') {
             steps {
                 bat 'npm install'
