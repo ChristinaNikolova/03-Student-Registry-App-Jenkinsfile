@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    tools {
-        nodejs 'NodeJS 20.x'
-    }
     stages {
         stage('Checkout the repo') {
             steps {
